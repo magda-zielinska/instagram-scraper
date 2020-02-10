@@ -1,4 +1,4 @@
-# instagram scraper
+# Instagram Scraper
 
 instagramScraper is an application written in Python that crawls and scrapes an instagram user's posts and comments. 
 
