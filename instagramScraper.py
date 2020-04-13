@@ -166,3 +166,13 @@ class InstagramComments(object):
                 return DatabaseFunctionality.execute_insert_comment_details(url, name, content, time_of_post)
             except psycopg2.errors.DatabaseError as e:
                 pass
+
+
+if __name__ == "__main__":
+    """ Example usage when looking for 100 most recent posts done by an Instagram account 
+    'instagram' by executing the get_post_links function. """
+    instagram = InstagramComments()
+    instagram.login()
+    instagram.get_post_links('instagram', 100)
+    for url in instagram.post_links:
+        instagram.get_post_details(url)
