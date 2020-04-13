@@ -168,6 +168,7 @@ class InstagramComments(object):
                 pass
 
 
+
 if __name__ == "__main__":
     """ Example usage when looking for 100 most recent posts done by an Instagram account 
     'instagram' by executing the get_post_links function. """
